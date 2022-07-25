@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+:root {
+  --VeryLightGray: #eff3ff; /* Background */
+  --VeryDarkBlue: hsl(200, 15%, 8%); /* Text */
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--VeryLightGray);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+  color: var(--VeryDarkBlue);
+  padding-left: 10vw;
+}
+
+.logo {
+  width: 40px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 5vh;
+}
+
+.card {
+  padding: 20px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      #6c5ce7 36%,
+      hsl(0, 0%, 100%) 36%
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 15vw;
+  gap: 13px;
+  border-radius: 8px;
+
+  /* display: none; */
+
+  /* transform: scale(0); */
+}
+
+.abilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ability {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stats li {
+  text-align: center;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.score {
+  font-weight: 400;
+}
+
+.interactions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.see-details {
+  align-self: start;
+  display: inline;
+  width: 50%;
+  padding: 8px 20px;
+  background: #6c5ce7;
+  border: 0;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.see-details:hover {
+  opacity: 0.9;
+}
+
+.like-btn {
+  display: inline;
+  font-size: 20px;
+}
+
+.fa-solid {
+  color: grey;
+  cursor: pointer;
+}
+
+.fa-solid.active {
+  color: rgb(255, 190, 10);
+}
+
+.details-page {
+  position: absolute;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 80vh;
+  border-radius: 16px;
+  background-color: #fff;
+
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.details-page img {
+  width: 15rem;
+}
+
+.pokemon {
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats.full {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.location {
+  margin-top: 10px;
+}
+
+.type .abilities {
+  margin-top: 13px;
+}
+
+.comment-section {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.comment-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+}
+
+.add-comment input,
+textarea {
+  padding: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  outline: 0;
+}
+
+.submit-comment {
+  width: 40%;
+  align-self: end;
+  padding: 8px 20px;
+  background: #6c5ce7;
+  border: 0;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.all-comments {
+  width: 60%;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 16px;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 600;
+}
