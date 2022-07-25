@@ -48,7 +48,7 @@ main {
   min-width: 15vw;
   gap: 13px;
   border-radius: 8px;
-  display: none;
+  /* display: none; */
   /* transform: scale(0); */
 }
 
@@ -138,6 +138,7 @@ h3 {
   justify-content: space-evenly;
   padding: 20px;
   flex-wrap: wrap;
+  display: none;
 }
 
 .details-page img {
@@ -169,9 +170,11 @@ h3 {
 }
 
 .comment-section {
-  margin-top: 20px;
+  margin-top: 50px;
   width: 100%;
+  display: flex;
 }
+
 .comment-section h2{
   text-align: center;
   margin-bottom: 20px;
@@ -183,6 +186,7 @@ h3 {
   gap: 10px;
   width: 40%;
 }
+
 
 .add-comment input, 
 textarea{
