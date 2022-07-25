@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 :root {
-  --VeryLightGray: #eff3ff; /*Background*/
-  --VeryDarkBlue: hsl(200, 15%, 8%); /*Text*/
+  --VeryLightGray: #eff3ff; /* Background */
+  --VeryDarkBlue: hsl(200, 15%, 8%); /* Text */
 }
+
 * {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: var(--VeryLightGray);
 }
@@ -22,6 +24,7 @@ nav {
   color: var(--VeryDarkBlue);
   padding-left: 10vw;
 }
+
 .logo {
   width: 40px;
 }
@@ -36,11 +39,12 @@ main {
 
 .card {
   padding: 20px;
-  background: radial-gradient(
-    circle at 50% 0%,
-    #6c5ce7 36%,
-    hsl(0, 0%, 100%) 36%
-  );
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      #6c5ce7 36%,
+      hsl(0, 0%, 100%) 36%
+    );
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -48,7 +52,9 @@ main {
   min-width: 15vw;
   gap: 13px;
   border-radius: 8px;
+
   /* display: none; */
+
   /* transform: scale(0); */
 }
 
@@ -84,7 +90,7 @@ h3 {
 }
 
 .score {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .interactions {
@@ -114,10 +120,12 @@ h3 {
   display: inline;
   font-size: 20px;
 }
+
 .fa-solid {
   color: grey;
   cursor: pointer;
 }
+
 .fa-solid.active {
   color: rgb(255, 190, 10);
 }
@@ -133,7 +141,7 @@ h3 {
   height: 80vh;
   border-radius: 16px;
   background-color: #fff;
-  display: flex;
+  /* display: flex; */
   align-items: flex-start;
   justify-content: space-evenly;
   padding: 20px;
@@ -146,7 +154,7 @@ h3 {
 }
 
 .pokemon {
-   text-align: center;
+  text-align: center;
 }
 
 .details {
@@ -156,9 +164,9 @@ h3 {
 }
 
 .stats.full {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .location {
@@ -175,7 +183,7 @@ h3 {
   display: flex;
 }
 
-.comment-section h2{
+.comment-section h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -187,9 +195,8 @@ h3 {
   width: 40%;
 }
 
-
-.add-comment input, 
-textarea{
+.add-comment input,
+textarea {
   padding: 10px;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
@@ -209,5 +216,14 @@ textarea{
 
 .all-comments {
   width: 60%;
-  
+}
+
+.attribution {
+  text-align: center;
+  font-size: 16px;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 600;
 }
