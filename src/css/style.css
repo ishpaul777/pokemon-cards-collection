@@ -141,6 +141,7 @@ h3 {
   height: 80vh;
   border-radius: 16px;
   background-color: #fff;
+
   /* display: flex; */
   align-items: flex-start;
   justify-content: space-evenly;
