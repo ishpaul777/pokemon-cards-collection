@@ -52,7 +52,10 @@ const displayPopup = () => {
             const locationsEl = document.querySelector('.locations');
             locationsEl.innerHTML = '<h2>Top 3 Locations</h2>';
 
-            if (data.length === 0) return;
+            if (data.length === 0) {
+              locationsEl.innerHTML = '<h2>No Locations Found</h2>';
+              return;
+            }
             for (let i = 0; i < 3; i += 1) {
               const locationSplitted = data[i].location_area.name.split('-');
               const location = locationSplitted
