@@ -53,8 +53,8 @@ const displayPopup = () => {
             locationsEl.innerHTML = '<h2>Top 3 Locations</h2>';
 
             if (data.length === 0) {
-              const location  = document.createElement('p')
-              location.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> No locations found'
+              const location = document.createElement('p');
+              location.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> No locations found';
               locationsEl.appendChild(location);
               return;
             }
