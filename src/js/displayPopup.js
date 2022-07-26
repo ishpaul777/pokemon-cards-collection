@@ -4,6 +4,7 @@ import displayComments from './displayComments.js';
 
 const listsEl = document.querySelector('.card-collection');
 const popupEl = document.querySelector('.details-page');
+const overlay = document.querySelector('.overlay');
 const closeBtnEl = document.querySelector('.close-btn');
 
 const displayPopup = () => {
@@ -75,11 +76,15 @@ const displayPopup = () => {
         document.querySelector('.speed-score--pop h3 .score').textContent = statSpeed;
       });
 
-    popupEl.style.display = 'flex';
+    popupEl.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
   });
 
   closeBtnEl.addEventListener('click', () => {
-    popupEl.style.display = 'none';
+    popupEl.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = 'auto';
   });
 };
 

@@ -130,39 +130,64 @@ h3 {
   color: rgb(255, 190, 10);
 }
 
+.overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c1c7d0f7;
+  transition: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .details-page {
-  position: absolute;
-  overflow: auto;
+  position: fixed;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  overflow-y: scroll;
+  transition: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
   width: 50vw;
   height: 80vh;
   border-radius: 16px;
+  display: flex;
   background-color: #fff;
-
-  /* display: flex; */
   align-items: flex-start;
   justify-content: space-evenly;
   padding: 20px;
   flex-wrap: wrap;
-  display: none;
+}
+
+.details-page.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.details-page.active::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 .close-btn {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 30px;
   font-size: 32px;
 }
 
 .details-page img {
-  width: 15rem;
+  width: 18rem;
 }
 
 .pokemon {
   text-align: center;
+  align-self: center;
 }
 
 .details {
