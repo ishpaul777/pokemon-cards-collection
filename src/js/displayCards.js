@@ -1,4 +1,4 @@
-const typeColor = {
+export const typeColor = {
   bug: '#26de81',
   dragon: '#ffeaa7',
   electric: '#fed330',
@@ -15,7 +15,7 @@ const typeColor = {
   psychic: '#a29bfe',
   rock: '#2d3436',
   water: '#0190FF',
-}; // ignore these DO NOT REMOVE
+};
 const displayCards = (Cards) => {
   Cards.forEach((Card) => {
     fetch(Card.url)
@@ -55,7 +55,7 @@ const displayCards = (Cards) => {
               </li>
               </ul>
               <div class="interactions">
-              <button class="see-details">See Details</button>
+              <button class="see-details" data-url=${Card.url}>See Details</button>
               <span class="like-btn">
               <i class="fa-solid fa-star"></i>
               <span class="count">0 Stars</span>
@@ -73,7 +73,7 @@ const displayCards = (Cards) => {
         types.forEach((type) => {
           const ability = document.createElement('span');
           ability.classList.add('ability');
-          ability.innerHTML = type.type.name;
+          ability.innerHTML = type.type.name[0].toUpperCase() + type.type.name.slice(1);
           ability.style.background = themeColor;
           abilities.appendChild(ability);
         });

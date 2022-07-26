@@ -18,10 +18,66 @@
       <img src="./assets/pokeball.jpg" alt="logo" class="logo" />
     </nav>
     <main class="card-collection"><!--LIST OF POKEMON--></main>
-    <section class="details-page"><!--pop up code goes here--></section>
+    <div class="overlay"></div>
+    <section class="details-page">
+      <!--pop up code goes here-->
+      <i class="close-btn">×</i>
+      <figure class="pokemon">
+        <img class="modal-image"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/32.svg"
+          alt="pokemon-img"
+        />
+        <h2 class="pokemon-name"></h2>
+      </figure>
+      <div class="details">
+        <div>
+          <h2>Statistics-</h2>
+          <ul class="full stats">
+            <li class="hp-score hp-score--pop">
+              <h3>HP: <span class="score"></span></h3>
+            </li>
+            <li class="attack-score attack-score--pop">
+              <h3>Attack: <span class="score"></span></h3>
+            </li>
+            <li class="defense-score defense-score--pop">
+              <h3>Defense: <span class="score"></span></h3>
+            </li>
+            <li class="spl-attack-score spl-attack-score--pop">
+              <h3>Special Attack: <span class="score"></span></h3>
+            </li>
+            <li class="spl-defense-score spl-defense-score--pop">
+              <h3>Special Defense: <span class="score"></span></h3>
+            </li>
+            <li class="speed-score speed-score--pop">
+              <h3>Speed: <span class="score"></span></h3>
+            </li>
+          </ul>
+        </div>
+        <div class="locations">
+        </div>
+        <div class="type">
+          <h2>Type</h2>
+          <div class="abilities abilities-pop">
+          </div>
+        </div>
+      </div>
+        <div class="comment-section">
+          <form action="#" class="add-comment">
+            <h2>Add a Comment</h2>
+            <input type="text" id="username" name="usernameEl" placeholder="Type your github username">
+            <textarea id="comment" name="commentMsgEl" cols="30" rows="5" placeholder="Type your comment"></textarea>
+            <p class="warning-note">Note- Please Use your own github username</p>
+            <button type="submit" class="submit-comment">Comment</button>
+          </form>
+          <div class="all-comments">
+            <!-- THIS IS THE SECTION WHERE YOU ADD COMMENTS STYLE IT HOWEVER YOU WANT -->
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="attribution">
         Created by <a href="https://github.com/ishpaul777/">Ishpaul Singh</a> &
-        <a href="https://github.com/amejid">Avatar Abdelmejid Oumer Ali </a>
+        <a href="https://github.com/amejid">Abdelmejid Oumer Ali </a>
         under MIT license
     </footer>
   </body>
