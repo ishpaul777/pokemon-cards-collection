@@ -4,6 +4,7 @@ import displayComments from './displayComments.js';
 
 const listsEl = document.querySelector('.card-collection');
 const popupEl = document.querySelector('.details-page');
+const closeBtnEl = document.querySelector('.close-btn');
 
 const displayPopup = () => {
   listsEl.addEventListener('click', (event) => {
@@ -75,6 +76,10 @@ const displayPopup = () => {
       });
 
     popupEl.style.display = 'flex';
+  });
+
+  closeBtnEl.addEventListener('click', () => {
+    popupEl.style.display = 'none';
   });
 };
 
