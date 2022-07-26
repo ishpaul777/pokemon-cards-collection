@@ -1,4 +1,6 @@
+import addComment from './addComment.js';
 import { typeColor } from './displayCards.js';
+import displayComments from './displayComments.js';
 
 const listsEl = document.querySelector('.card-collection');
 const popupEl = document.querySelector('.details-page');
@@ -20,6 +22,10 @@ const displayPopup = () => {
         const statSpecialAttack = data.stats[3].base_stat;
         const statSpecialDefense = data.stats[4].base_stat;
         const statSpeed = data.stats[5].base_stat;
+
+        document.querySelector('.add-comment').dataset.item = data.species.name;
+        displayComments(data.species.name);
+        addComment();
 
         const abilitiesEl = document.querySelector('.abilities-pop');
         abilitiesEl.innerHTML = '';
@@ -65,7 +71,8 @@ const displayPopup = () => {
         document.querySelector('.attack-score--pop h3 .score').textContent = statAttack;
         document.querySelector('.defense-score--pop h3 .score').textContent = statDefense;
         document.querySelector('.spl-attack-score--pop h3 .score').textContent = statSpecialAttack;
-        document.querySelector('.spl-defense-score--pop h3 .score').textContent = statSpecialDefense;
+        document.querySelector('.spl-defense-score--pop h3 .score').textContent =
+          statSpecialDefense;
         document.querySelector('.speed-score--pop h3 .score').textContent = statSpeed;
       });
 
