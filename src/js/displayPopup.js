@@ -1,4 +1,3 @@
-import addComment from './addComment.js';
 import { typeColor } from './displayCards.js';
 import displayComments from './displayComments.js';
 
@@ -25,7 +24,6 @@ const displayPopup = () => {
 
         document.querySelector('.add-comment').dataset.item = data.species.name;
         displayComments(data.species.name);
-        addComment();
 
         const abilitiesEl = document.querySelector('.abilities-pop');
         abilitiesEl.innerHTML = '';
