@@ -1,5 +1,6 @@
-import getStars from "./getStars.js";
-import postStars from './postStars.js'
+import getStars from './getStars.js';
+import postStars from './postStars.js';
+
 export const typeColor = {
   bug: '#26de81',
   dragon: '#ffeaa7',
@@ -82,35 +83,35 @@ const displayCards = (Cards) => {
         card.querySelector('.see-details').style.background = themeColor;
         cardCollection.appendChild(card);
 
-        const likeCountEL =  card.querySelector('.count')
-        getStars(likeCountEL,pokemonName)
-        const starBtn = card.querySelector('.like-btn .fa-star')
-        starBtn.addEventListener('click', ()=>{
-          if(starBtn.classList.contains('active')){
-            starBtn.classList.remove('active')
-            likeCountEL.textContent = parseInt(likeCountEL.textContent) - 1
-            let starData = JSON.parse(localStorage.getItem('StarData'))
-            starData.forEach(pokemon => {
-              if(pokemon == pokemonName){
-                starData = starData.filter(e => e !== pokemon)
-                localStorage.setItem('StarData', JSON.stringify(starData))
+        const likeCountEL = card.querySelector('.count');
+        getStars(likeCountEL, pokemonName);
+        const starBtn = card.querySelector('.like-btn .fa-star');
+        starBtn.addEventListener('click', () => {
+          if (starBtn.classList.contains('active')) {
+            starBtn.classList.remove('active');
+            likeCountEL.textContent = parseInt(likeCountEL.textContent, 10) - 1;
+            let starData = JSON.parse(localStorage.getItem('StarData'));
+            starData.forEach((pokemon) => {
+              if (pokemon === pokemonName) {
+                starData = starData.filter((e) => e !== pokemon);
+                localStorage.setItem('StarData', JSON.stringify(starData));
               }
-            })
-          }else{
-            starBtn.classList.add('active')
-            likeCountEL.textContent = parseInt(likeCountEL.textContent) + 1
-            postStars(pokemonName)
-            if(localStorage.getItem('StarData') === null){
-              const starredPokemons = []
-              starredPokemons.push(pokemonName)
-              localStorage.setItem('StarData', JSON.stringify(starredPokemons))
-            }else {
-              const starData = JSON.parse(localStorage.getItem('StarData'))
-               starData.push(pokemonName)
-               localStorage.setItem('StarData', JSON.stringify(starData))
+            });
+          } else {
+            starBtn.classList.add('active');
+            likeCountEL.textContent = parseInt(likeCountEL.textContent, 10) + 1;
+            postStars(pokemonName);
+            if (localStorage.getItem('StarData') === null) {
+              const starredPokemons = [];
+              starredPokemons.push(pokemonName);
+              localStorage.setItem('StarData', JSON.stringify(starredPokemons));
+            } else {
+              const starData = JSON.parse(localStorage.getItem('StarData'));
+              starData.push(pokemonName);
+              localStorage.setItem('StarData', JSON.stringify(starData));
             }
           }
-        })
+        });
       });
   });
 };
