@@ -150,6 +150,13 @@ h3 {
   display: none;
 }
 
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  font-size: 32px
+}
+
 .details-page img {
   width: 15rem;
 }

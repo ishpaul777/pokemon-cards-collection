@@ -9,7 +9,6 @@ const displayPopup = () => {
   listsEl.addEventListener('click', (event) => {
     const clicked = event.target.closest('.see-details');
     if (!clicked) return;
-
     fetch(clicked.dataset.url)
       .then((response) => response.json())
       .then((data) => {
