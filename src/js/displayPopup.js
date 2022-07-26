@@ -71,8 +71,7 @@ const displayPopup = () => {
         document.querySelector('.attack-score--pop h3 .score').textContent = statAttack;
         document.querySelector('.defense-score--pop h3 .score').textContent = statDefense;
         document.querySelector('.spl-attack-score--pop h3 .score').textContent = statSpecialAttack;
-        document.querySelector('.spl-defense-score--pop h3 .score').textContent =
-          statSpecialDefense;
+        document.querySelector('.spl-defense-score--pop h3 .score').textContent = statSpecialDefense;
         document.querySelector('.speed-score--pop h3 .score').textContent = statSpeed;
       });
 
