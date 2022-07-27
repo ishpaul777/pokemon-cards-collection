@@ -54,6 +54,21 @@ main {
   gap: 5vh;
 }
 
+.loader {
+  align-self: center;
+  border: 8px solid var(--VeryLightGray); /* Light grey */
+  border-top: 8px solid #0b1833; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .card {
   padding: 20px;
   display: flex;
@@ -63,10 +78,6 @@ main {
   min-width: 15vw;
   gap: 13px;
   border-radius: 8px;
-
-  /* display: none; */
-
-  /* transform: scale(0); */
 }
 
 .card img {
@@ -301,7 +312,12 @@ textarea {
   font-weight: 700;
 }
 
+.fa-solid.fa-heart {
+  color: red;
+}
+
 .attribution {
+  margin: 10px;
   text-align: center;
   font-size: 16px;
 }

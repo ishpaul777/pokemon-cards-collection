@@ -7,6 +7,7 @@ import fetchApi from './js/fetchApi.js';
 document.addEventListener('DOMContentLoaded', async () => {
   const response = await fetchApi(20, 0);
   displayCards(response);
+  document.querySelector('.loader').style.display = 'none';
   displayPopup();
   addComment();
 });
