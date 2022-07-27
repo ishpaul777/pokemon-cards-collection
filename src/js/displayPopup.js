@@ -84,7 +84,11 @@ const displayPopup = () => {
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
   });
-
+  overlay.addEventListener('click', () => {
+    popupEl.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  });
   closeBtnEl.addEventListener('click', () => {
     popupEl.classList.remove('active');
     overlay.classList.remove('active');

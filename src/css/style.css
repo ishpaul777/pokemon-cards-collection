@@ -293,3 +293,57 @@ textarea {
   text-decoration: none;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .card {
+    /* width: 70vw; */
+    padding: 30px;
+  }
+
+  .details-page {
+    width: 75vw;
+    padding: 30px;
+  }
+
+  .details-page img {
+    width: 13rem;
+  }
+
+  .details {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .pokemon {
+    margin-bottom: 20px;
+  }
+
+  .full.stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .comment-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .add-comment {
+    width: 90%;
+  }
+
+  .all-comments {
+    width: 90%;
+  }
+
+  .comment {
+    width: 90%;
+  }
+
+  .warning-note {
+    font-size: 13px;
+  }
+}

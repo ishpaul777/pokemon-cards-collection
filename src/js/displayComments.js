@@ -9,6 +9,7 @@ const displayComments = (item) => {
   fetch(`${INVOLVEMENT_URL}/comments?item_id=${item}`)
     .then((response) => response.json())
     .then((data) => {
+      if (data.error) return;
       document.querySelector('.comments-counter').innerHTML = `Comments (${data.length || 0})`;
 
       data.forEach((comment) => {
