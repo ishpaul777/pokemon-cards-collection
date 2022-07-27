@@ -18,15 +18,32 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
+  justify-content: space-between;
   gap: 10px;
   color: var(--VeryDarkBlue);
-  padding-left: 10vw;
+  padding: 10px 4vw;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
   width: 40px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.nav-items a {
+  color: black;
+  text-decoration: none;
 }
 
 main {
@@ -295,6 +312,10 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
   .card {
     /* width: 70vw; */
     padding: 30px;

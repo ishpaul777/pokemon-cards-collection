@@ -82,6 +82,8 @@ const displayCards = (Cards) => {
         card.style.background = `radial-gradient(circle at 50% 0%,${themeColor} 36%,hsl(0, 0%, 100%) 36%)`;
         card.querySelector('.see-details').style.background = themeColor;
         cardCollection.appendChild(card);
+        const cardCount = document.querySelector('.card-count');
+        cardCount.innerHTML = parseInt(cardCount.innerHTML, 10) + 1;
 
         const likeCountEL = card.querySelector('.count');
         getStars(likeCountEL, pokemonName);
