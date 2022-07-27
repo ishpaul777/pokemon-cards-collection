@@ -13,9 +13,9 @@ Pokemon Cards
 - [PokeAPI](https://pokeapi.co/docs/v2#pokemon-section)
 - [InvolvementAPI](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://ishpaul777.github.io/pokemon-cards-collection/)
+A live version of the website can be seen [here](https://ishpaul777.github.io/pokemon-cards-collection/)
 
 ## Getting Started
 
