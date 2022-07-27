@@ -3,7 +3,7 @@ import INVOLVEMENT_URL from './config.js';
 const commentsEl = document.querySelector('.all-comments');
 
 const displayComments = (item) => {
-  const commentsHead = '<h2 class="comments-counter">Comments</h2>';
+  const commentsHead = '<h2 class="comments-counter">Comments(0)</h2>';
   commentsEl.innerHTML = commentsHead;
 
   fetch(`${INVOLVEMENT_URL}/comments?item_id=${item}`)
