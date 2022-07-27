@@ -295,6 +295,10 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .card {
+    /* width: 70vw; */
+    padding: 30px;
+  }
   .details-page {
     width: 75vw;
     padding: 30px;
