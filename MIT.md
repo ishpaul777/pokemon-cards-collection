@@ -1,10 +1,11 @@
 ## Copyright 2021, [YOUR NAME]
 
 ###### Please delete this line and the next one
-###### APP TYPE can be a webpage/website, a web app, a software and so on
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [APP TYPE] and associated documentation files, to deal in the [APP TYPE] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [APP TYPE], and to permit persons to whom the [APP TYPE] is furnished to do so, subject to the following conditions:
+###### POKEMON COLLECTION APP can be a webpage/website, a web app, a software and so on
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [APP TYPE].
+Permission is hereby granted, free of charge, to any person obtaining a copy of this [POKEMON COLLECTION APP ] and associated documentation files, to deal in the [POKEMON COLLECTION APP ] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [POKEMON COLLECTION APP ], and to permit persons to whom the [POKEMON COLLECTION APP ] is furnished to do so, subject to the following conditions:
 
-THE [APP TYPE] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [APP TYPE] OR THE USE OR OTHER DEALINGS IN THE [APP TYPE].
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [POKEMON COLLECTION APP ].
+
+THE [POKEMON COLLECTION APP ] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [POKEMON COLLECTION APP ] OR THE USE OR OTHER DEALINGS IN THE [POKEMON COLLECTION APP ].

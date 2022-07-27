@@ -1,56 +1,47 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Project Name
 
-> Description the project.
+Pokemon Cards
 
+> Pokémon Cards Collection project is the application for showing top 20 pokemon, Users can see details of a specific Pokémon by clicking see-details button Users can give Stars to one or more Cards.Users can comment on pokemon card details.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html
+- CSS
+- Javascript
+- Webpack
+- [PokeAPI](https://pokeapi.co/docs/v2#pokemon-section)
+- [InvolvementAPI](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+A live version of the website can be seen [here](https://ishpaul777.github.io/pokemon-cards-collection/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Using it Locally
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Clone the project from GitHub [here](git@github.com:ishpaul777/pokemon-cards-collection.git)
+- Run the following commands as listed in your terminal:
+- `npm install`
+- `npm run build`
+- `npm start`
 
 ## Authors
 
-👤 **Author1**
+👤 **Ishpaul Singh**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Github - [@ishpaul777](https://github.com/ishpaul777)
+- Twitter - [@ishpaul777](https://twitter.com/ishpaul777)
+- Linkedin - [Ishpaul Singh](https://www.linkedin.com/in/ishpaul-singh-264590226/)
 
-👤 **Author2**
+👤 **Abdelmejid Oumer Ali**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@amejid](https://github.com/amejid)
+- Twitter: [@amejidoumer](https://twitter.com/amejidoumer)
+- LinkedIn: [amejid](https://linkedin.com/in/amejid)
 
 ## 🤝 Contributing
 
